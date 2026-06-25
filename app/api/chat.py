@@ -8,11 +8,4 @@ router = APIRouter()
 def chat(
     query: str
 ):
-    answer = ask_question(
-        query
-    )
-
-    return {
-        "question": query,
-        "answer": answer
-    }
+    return ask_question(query)
